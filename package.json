@@ -1,0 +1,12 @@
+{
+  "name": "route-doc",
+  "version": "1.0.0",
+  "description": "Automatically document file paths of a project",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "route-doc": "node index.js"
+  },
+  "author": "Zachary Killebrew",
+  "license": "ISC"
+}
