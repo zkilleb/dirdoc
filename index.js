@@ -12,7 +12,7 @@ function readDirectory(directory) {
             if(fs.lstatSync(fullPath).isDirectory()) {
                 scannedFiles = scannedFiles.concat(readDirectory(fullPath));
             } 
-            if(path.extname(fullPath) === '.rd') {
+            if(path.extname(fullPath) === '.dd') {
                 const data = fs.readFileSync(fullPath, 'utf8')
                 const lastIndex = fullPath.lastIndexOf('\\');
                 scannedFiles.push({path: fullPath.slice(0, lastIndex + 1), data});
@@ -32,7 +32,7 @@ function compileMarkdown() {
         writeString += `### ${result.data}\n`
     });
     try {
-        fs.writeFileSync(`${currentDir}/RouteDoc.md`, writeString)
+        fs.writeFileSync(`${currentDir}/DirectoryDoc.md`, writeString)
     } catch (err) {
         console.error(err)
     }
