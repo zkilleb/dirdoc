@@ -1,6 +1,6 @@
 {
   "name": "dirdoc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatically document file paths of a project",
   "repository": "https://github.com/zkilleb/dirdoc",
   "main": "index.js",

@@ -10,6 +10,6 @@ Running the `dirdoc` script will search your application directory and look for 
 
 Create a script in the projects package.json to run `dirdoc`. When the script is called, it will automatically output your documentation in the file `DirectoryDoc.md` on the root level.
 
-## Structuring a .rd file
+## Structuring a .dd file
 
 A `.dd` can be added at any level of the application. Treat the `.dd` file as a `.txt` file and add whatever text you want to put outputted along with the file path in the documentation.
